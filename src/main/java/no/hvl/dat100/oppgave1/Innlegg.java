@@ -4,7 +4,11 @@ import no.hvl.dat100.common.TODO;
 
 public abstract class Innlegg {
 	
-	// TODO - deklarering av objektvariable
+	int id;
+	String bruker;
+	String dato;
+	int likes;
+	
 	
 	public Innlegg() {
 		

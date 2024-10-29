@@ -68,11 +68,11 @@ public abstract class Innlegg {
 		likes++; 
 	}
 	
-	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+  public boolean erLik(Innlegg innlegg) {
+	  
+        return this.id == innlegg.getId();
+   }
 
-	}
-	
 	@Override
 	public String toString() {
 		

@@ -4,11 +4,10 @@ import no.hvl.dat100.common.TODO;
 
 public abstract class Innlegg {
 	
-	int id;
-	String bruker;
-	String dato;
-	int likes;
-	
+	private int id;
+	private String bruker;
+	private String dato;
+	private int likes;
 	
 	public Innlegg() {
 		
@@ -16,15 +15,20 @@ public abstract class Innlegg {
 	
 	public Innlegg(int id, String bruker, String dato) {
 
-		// TODO 
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.likes = 0;
+		
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
 
-		// TODO - START
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.likes = likes;
 		
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
 	}
 	
 	public String getBruker() {
@@ -57,7 +61,7 @@ public abstract class Innlegg {
 	}
 	
 	public void doLike () {
-		throw new UnsupportedOperationException(TODO.method());
+		likes++; 
 	}
 	
 	public boolean erLik(Innlegg innlegg) {

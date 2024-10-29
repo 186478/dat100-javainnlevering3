@@ -60,7 +60,7 @@ public abstract class Innlegg {
 
 	public int getLikes() {
 		
-		
+		return likes;
 
 	}
 	
